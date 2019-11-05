@@ -53,23 +53,32 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\ArBullet.cs" />
+     <Compile Include="Assets\Scripts\ArShoot.cs" />
+     <Compile Include="Assets\Scripts\Boudary.cs" />
      <Compile Include="Assets\Scripts\Bullet.cs" />
      <Compile Include="Assets\Scripts\Bullet1.cs" />
      <Compile Include="Assets\Scripts\Enemy.cs" />
      <Compile Include="Assets\Scripts\MouseNshoot.cs" />
      <Compile Include="Assets\Scripts\MouseNshoot2.cs" />
      <Compile Include="Assets\Scripts\MouseNshoot3.cs" />
+     <Compile Include="Assets\Scripts\Player.cs" />
+     <Compile Include="Assets\Scripts\ShotgunBullet.cs" />
+     <Compile Include="Assets\Scripts\ShotgunShoot.cs" />
+     <Compile Include="Assets\Scripts\SniperBullet.cs" />
+     <Compile Include="Assets\Scripts\SniperShoot.cs" />
+     <Compile Include="Assets\Scripts\WeaponSwitch.cs" />
  <Reference Include="UnityEditor.StandardEvents">
- <HintPath>C:/Users/james/Desktop/Mobile app 3/mobileAppProject3/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+ <HintPath>C:/Users/james/Desktop/Mobile app 3/MobileApp3-Project/mobileAppProject3/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>C:/Users/james/Desktop/Mobile app 3/mobileAppProject3/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>C:/Users/james/Desktop/Mobile app 3/MobileApp3-Project/mobileAppProject3/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.PackageManagerUI.Editor">
- <HintPath>C:/Users/james/Desktop/Mobile app 3/mobileAppProject3/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+ <HintPath>C:/Users/james/Desktop/Mobile app 3/MobileApp3-Project/mobileAppProject3/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>C:/Users/james/Desktop/Mobile app 3/mobileAppProject3/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>C:/Users/james/Desktop/Mobile app 3/MobileApp3-Project/mobileAppProject3/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

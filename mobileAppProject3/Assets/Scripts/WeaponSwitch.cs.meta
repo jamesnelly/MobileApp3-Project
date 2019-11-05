@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: c2472a8601e476f489ff52867a4dadd8
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - shotgun: {fileID: 1985058820273518, guid: c3874b79360141c4396377378c7ca749, type: 2}
+  - AR: {fileID: 1111292406387102, guid: d03cae10d46d7c245b403c76f33b03bd, type: 2}
+  - SniperRifle: {fileID: 1665904914417882, guid: 064c05d09cc255d46af906cf5e4d9107,
+      type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

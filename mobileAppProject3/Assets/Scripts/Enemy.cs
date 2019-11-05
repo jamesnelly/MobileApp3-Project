@@ -5,7 +5,7 @@ using UnityEngine;
 public class Enemy : MonoBehaviour {
 
 	public int Health = 100;
-	public GameObject death;
+	//public GameObject death;
 	// Use this for initialization
 	
 	public void GettingHit(int Damage)
@@ -19,7 +19,7 @@ public class Enemy : MonoBehaviour {
 
 	void Killed()
 	{
-		Instantiate (death, transform.position, Quaternion.identity);
+		//Instantiate (death.gameObject, transform.position, Quaternion.identity);
 		Destroy(gameObject);
 	}
 }
