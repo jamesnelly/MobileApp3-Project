@@ -53,15 +53,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\MainMenu.cs" />
      <Compile Include="Assets\Scripts\ArBullet.cs" />
      <Compile Include="Assets\Scripts\ArShoot.cs" />
-     <Compile Include="Assets\Scripts\Boudary.cs" />
-     <Compile Include="Assets\Scripts\Bullet.cs" />
-     <Compile Include="Assets\Scripts\Bullet1.cs" />
      <Compile Include="Assets\Scripts\Enemy.cs" />
-     <Compile Include="Assets\Scripts\MouseNshoot.cs" />
-     <Compile Include="Assets\Scripts\MouseNshoot2.cs" />
-     <Compile Include="Assets\Scripts\MouseNshoot3.cs" />
      <Compile Include="Assets\Scripts\Player.cs" />
      <Compile Include="Assets\Scripts\ShotgunBullet.cs" />
      <Compile Include="Assets\Scripts\ShotgunShoot.cs" />
