@@ -88,7 +88,7 @@ public class Player : MonoBehaviour {
 						current2 = 1;
 					}
 				}
-				transform.position = Vector3.MoveTowards(transform.position, Directions2[current2].transform.position, Time.smoothDeltaTime * speed + 0.30f);
+				transform.position = Vector3.MoveTowards(transform.position, Directions2[current2].transform.position, Time.smoothDeltaTime * speed + 0.40f);
 			}
 		}
 	}
