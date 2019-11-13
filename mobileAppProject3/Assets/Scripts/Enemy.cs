@@ -5,6 +5,7 @@ using UnityEngine;
 public class Enemy : MonoBehaviour {
 
 	public int Health = 100;
+	public int ScoreValue = 100;
 
 	[SerializeField]
 	public GameObject EnemyBullet;
@@ -27,27 +28,6 @@ public class Enemy : MonoBehaviour {
 			TimeBtwShots -= Time.deltaTime;
 		}
 	}
-	
-/*
-	//float FireRate;
-	//float NextShot;
-	void start()
-	{
-		FireRate = 140f;
-		NextShot = Time.time;
-	}
-
-	void Update()
-	{
-		CheckTimingFire();
-	}
-	void CheckTimingFire(){
-		if(Time.time > NextShot){
-			Instantiate(EnemyBullet, transform.position, Quaternion.identity);
-			NextShot = Time.time + FireRate;
-		}
-	}
-	*/
 	public void GettingHit(int Damage)
 	{
 		Health -= Damage;
@@ -59,7 +39,8 @@ public class Enemy : MonoBehaviour {
 
 	void Killed()
 	{
-		//Instantiate (death.gameObject, transform.position, Quaternion.identity);
+		ScoreManager.score += ScoreValue;
+		Debug.Log("Score = " + ScoreValue);
 		Destroy(gameObject);
 	}
 }

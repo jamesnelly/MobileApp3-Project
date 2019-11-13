@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemyBullet : MonoBehaviour {
 
 	public float speed;
-
+	public int damage;
 	Rigidbody2D rb;
 	Player target;
 	Vector2 direction;
@@ -20,8 +20,10 @@ public class EnemyBullet : MonoBehaviour {
 	}
 	void OnTriggerEnter2D(Collider2D info)
 	{
-		if(info.gameObject.name.Equals ("Player")){
-			Debug.Log("HIT!!!");
+		Player player = info.GetComponent<Player>();
+		if(player != null){
+			//Debug.Log("HIT!!!");
+			player.GettingHit(damage);
 			DestroyBullet();
 		}
 	}
