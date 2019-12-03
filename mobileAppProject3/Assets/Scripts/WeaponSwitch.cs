@@ -3,14 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class WeaponSwitch : MonoBehaviour {
-
 public int SelectedWeapon = 0;
-
 	// Use this for initialization
 	void Start () {
 		SelectWeapon();
 	}
-	
 	// Update is called once per frame
 	void Update () {
 		int PreviousSelectedWeapon = SelectedWeapon;

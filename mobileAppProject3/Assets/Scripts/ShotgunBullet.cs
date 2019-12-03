@@ -10,7 +10,7 @@ public class ShotgunBullet : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		RB.velocity = transform.right * speed;
-		Destroy(gameObject, 0.4f);
+		Destroy(gameObject, 3f);
 	}
 
 	void OnTriggerEnter2D (Collider2D hitInfo)

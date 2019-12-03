@@ -10,6 +10,7 @@ public class ArBullet : MonoBehaviour {
 
 	void Start () {
 		RB.velocity = transform.right * speed;
+		Destroy(gameObject, 0.6f);
 	}
 
 	void OnTriggerEnter2D (Collider2D hitInfo)
