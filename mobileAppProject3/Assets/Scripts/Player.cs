@@ -45,7 +45,7 @@ public class Player : MonoBehaviour {
 		 My_Enemy_Script1 = MyEnemy1.GetComponent<Enemy>();
 		 My_Enemy_Script2 = MyEnemy2.GetComponent<Enemy>();
 		 My_Enemy_Script3 = MyEnemy3.GetComponent<Enemy>();
-		My_Enemy_Script4 = MyEnemy4.GetComponent<Enemy>();
+		 My_Enemy_Script4 = MyEnemy4.GetComponent<Enemy>();
 	 }
 	
 	// Update is called once per frame
