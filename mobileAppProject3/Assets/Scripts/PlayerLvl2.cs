@@ -23,8 +23,8 @@ public class PlayerLvl2 : MonoBehaviour {
 	public GameObject MyEnemy4;
 	public GameObject MyEnemy5;
 	public GameObject MyEnemy6;
-	public GameObject MyEnemy7;
-	public GameObject MyEnemy8;
+	//public GameObject MyEnemy7;
+	//public GameObject MyEnemy8;
 #endregion
 
 #region referencing single enemy's from the enemy script
@@ -34,8 +34,8 @@ public class PlayerLvl2 : MonoBehaviour {
 	Enemy My_Enemy_Script4;
 	Enemy My_Enemy_Script5;
 	Enemy My_Enemy_Script6;
-	Enemy My_Enemy_Script7;
-	Enemy My_Enemy_Script8;
+//	Enemy My_Enemy_Script7;
+//	Enemy My_Enemy_Script8;
 	#endregion
 
 #region Current Postion
@@ -45,8 +45,8 @@ public class PlayerLvl2 : MonoBehaviour {
 	int current3 = 0;
 	int current4 = 0;
 	int current5 = 0;
-	int current6 = 0;
-	int current7 = 0;
+	//int current6 = 0;
+	//int current7 = 0;
 	#endregion
 public float speed;
 
@@ -57,8 +57,8 @@ public float speed;
 	float radius3 = 0;
 	float radius4 = 0;
 	float radius5 = 0;
-	float radius6 = 0;
-	float radius7 = 0;
+	//float radius6 = 0;
+	//float radius7 = 0;
 	#endregion
 	
 #region Refencing enemys health in player class
@@ -68,8 +68,8 @@ public float speed;
 	public int Health_Info4 = 100;
 	public int Health_Info5 = 100;
 	public int Health_Info6 = 100;
-	public int Health_Info7 = 100;
-	public int Health_Info8 = 100;
+	//public int Health_Info7 = 100;
+	//public int Health_Info8 = 100;
 	#endregion
 	 
 #region START METHOD getting enemy scripts to = there gameobjets
@@ -80,8 +80,8 @@ public float speed;
 		 My_Enemy_Script4 = MyEnemy4.GetComponent<Enemy>();
 		 My_Enemy_Script5 = MyEnemy5.GetComponent<Enemy>();
 		 My_Enemy_Script6 = MyEnemy6.GetComponent<Enemy>();
-		 My_Enemy_Script7 = MyEnemy7.GetComponent<Enemy>();
-		 My_Enemy_Script8 = MyEnemy8.GetComponent<Enemy>();
+		// My_Enemy_Script7 = MyEnemy7.GetComponent<Enemy>();
+		 //My_Enemy_Script8 = MyEnemy8.GetComponent<Enemy>();
 	 }
 	 #endregion
 	
@@ -93,8 +93,8 @@ public float speed;
 		Health_Info4 = My_Enemy_Script4.Health;
 		Health_Info5 = My_Enemy_Script5.Health;
 		Health_Info6 = My_Enemy_Script6.Health;
-		Health_Info7 = My_Enemy_Script7.Health;
-		Health_Info8 = My_Enemy_Script8.Health;
+		//Health_Info7 = My_Enemy_Script7.Health;
+		//Health_Info8 = My_Enemy_Script8.Health;
 		
 		Move1();
 		Move2();
@@ -102,8 +102,8 @@ public float speed;
 		Move4();
 		Move5();
 		Move6();
-		Move7();
-		Move8();
+		//Move7();
+		//Move8();
 		}
 		#endregion
 		
@@ -162,17 +162,17 @@ public float speed;
 			}
 		}
 
-		public void Move5(){
+		 void Move5(){
 			Debug.Log("Enemy 5 Health = "+Health_Info5);
 				if(My_Enemy_Script5.Health == 0 ){
 					if(Vector3.Distance(Directions4[current4].transform.position, transform.position) < radius4){
 					current4++;
 					if(current4 >= Directions4.Length)
 					{
-						current4 = 2;
+						current4 = 1;
 					}
 				}
-				transform.position = Vector3.MoveTowards(transform.position, Directions4[current4].transform.position, Time.smoothDeltaTime * speed + 0.85f);
+				transform.position = Vector3.Lerp(transform.position, Directions4[current4].transform.position, Time.smoothDeltaTime * speed + 0.80f);
 			}
 		}
 
@@ -186,9 +186,11 @@ public float speed;
 						current5 = 1;
 					}
 				}
-				transform.position = Vector3.MoveTowards(transform.position, Directions5[current5].transform.position, Time.smoothDeltaTime * speed + 0.80f);
+				transform.position = Vector3.Lerp(transform.position, Directions5[current5].transform.position, Time.smoothDeltaTime * speed + 0.80f);
 			}
 		}
+
+/*
 		public void Move7(){
 			Debug.Log("Enemy 7 Health = "+Health_Info7);
 				if(My_Enemy_Script7.Health == 0 ){
@@ -202,7 +204,9 @@ public float speed;
 				transform.position = Vector3.MoveTowards(transform.position, Directions6[current6].transform.position, Time.smoothDeltaTime * speed + 0.80f);
 			}
 		}
+*/
 
+/*
 		public void Move8(){
 			Debug.Log("Enemy 8 Health = "+Health_Info8);
 				if(My_Enemy_Script8.Health == 0 ){
@@ -216,6 +220,7 @@ public float speed;
 				transform.position = Vector3.MoveTowards(transform.position, Directions7[current7].transform.position, Time.smoothDeltaTime * speed + 0.80f);
 			}
 		}
+		*/
 		#endregion
 		public void GettingHit(int Damage)
 	{
