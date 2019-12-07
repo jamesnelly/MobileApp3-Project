@@ -18,7 +18,7 @@ public class EnemyBullet2 : MonoBehaviour {
 	}
 	void OnTriggerEnter2D(Collider2D info)
 	{
-		Player player = info.GetComponent<Player>();
+		PlayerLvl2 player = info.GetComponent<PlayerLvl2>();
 		if(player != null){
 			//Debug.Log("HIT!!!");
 			player.GettingHit(damage);
