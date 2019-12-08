@@ -101,6 +101,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 15
   Damage: 20
+  range: 0.5
   RB: {fileID: 50630775408191990}
 --- !u!212 &212726643784021048
 SpriteRenderer:

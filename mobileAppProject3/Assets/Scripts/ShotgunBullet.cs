@@ -5,12 +5,13 @@ using UnityEngine;
 public class ShotgunBullet : MonoBehaviour {
 	public float speed = 15f;
 	public int Damage = 20;
+	public float range = 10;
 	public Rigidbody2D RB;
 
 	// Use this for initialization
 	void Start () {
 		RB.velocity = transform.right * speed;
-		Destroy(gameObject, 3f);
+		Destroy(gameObject, range);
 	}
 
 	void OnTriggerEnter2D (Collider2D hitInfo)

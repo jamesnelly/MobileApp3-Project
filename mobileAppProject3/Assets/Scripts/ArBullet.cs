@@ -6,11 +6,12 @@ public class ArBullet : MonoBehaviour {
 
 	public float speed = 15f;
 	public int Damage = 15;
+	public float range = 5f;
 	public Rigidbody2D RB;
 
 	void Start () {
 		RB.velocity = transform.right * speed;
-		Destroy(gameObject, 0.6f);
+		Destroy(gameObject, range);
 	}
 
 	void OnTriggerEnter2D (Collider2D hitInfo)
