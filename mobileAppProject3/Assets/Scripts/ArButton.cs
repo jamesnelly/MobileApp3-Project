@@ -6,17 +6,15 @@ using UnityEngine.UI;
 public class ArButton : MonoBehaviour {
 
 	public GameObject AR; 
-	public int selectedWeapon = 1;
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+	public GameObject shotgun;
 
-	public void SetText(string Text)
+	public GameObject Sniper;
+	//public int selectedWeapon = 0;
+
+	public void Ar()
 	{ 
-		Text txt = transform.Find("Text").GetComponent<Text>();
-		txt.text = Text;
-		Debug.Log("new = "+Text);
+			AR.SetActive(true);
+			shotgun.SetActive(false);
+			Sniper.SetActive(false);
 	}
 }

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour {
 
@@ -62,7 +63,7 @@ public class Player : MonoBehaviour {
 		}
 
 		public void Move1(){
-			Debug.Log("Enemy 1 Health = "+Health_Info1);
+			//Debug.Log("Enemy 1 Health = "+Health_Info1);
 				if(My_Enemy_Script1.Health == 0 ){
 					if(Vector3.Distance(Directions[current].transform.position, transform.position) < radius){
 					current++;
@@ -75,7 +76,7 @@ public class Player : MonoBehaviour {
 			}
 		}
 		public void Move2(){
-			Debug.Log("Enemy 2 Health = "+Health_Info2);
+			//Debug.Log("Enemy 2 Health = "+Health_Info2);
 				if(My_Enemy_Script2.Health == 0 ){
 					if(Vector3.Distance(Directions1[current1].transform.position, transform.position) < radius1){
 					current1++;
@@ -88,7 +89,7 @@ public class Player : MonoBehaviour {
 			}
 		}
 		public void Move3(){
-			Debug.Log("Enemy 3 Health = "+Health_Info3);
+			//Debug.Log("Enemy 3 Health = "+Health_Info3);
 				if(My_Enemy_Script3.Health == 0 ){
 					if(Vector3.Distance(Directions2[current2].transform.position, transform.position) < radius2){
 					current2++;
@@ -102,7 +103,7 @@ public class Player : MonoBehaviour {
 		}
 
 		public void Move4(){
-			Debug.Log("Enemy 4 Health = "+Health_Info4);
+		//	Debug.Log("Enemy 4 Health = "+Health_Info4);
 				if(My_Enemy_Script4.Health == 0 ){
 					if(Vector3.Distance(Directions3[current3].transform.position, transform.position) < radius3){
 					current3++;
@@ -117,10 +118,11 @@ public class Player : MonoBehaviour {
 		public void GettingHit(int Damage)
 	{
 		Health -= Damage;
-		Debug.Log("Player Health = "+Health);
+		//Debug.Log("Player Health = "+Health);
 		if(Health <= 0)
 		{
 			Destroy(gameObject);
+			SceneManager.LoadScene("level 1");
 		}
 	}
 	}

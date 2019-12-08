@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerLvl2 : MonoBehaviour {
 
@@ -80,8 +81,6 @@ public float speed;
 		 My_Enemy_Script4 = MyEnemy4.GetComponent<Enemy>();
 		 My_Enemy_Script5 = MyEnemy5.GetComponent<Enemy>();
 		 My_Enemy_Script6 = MyEnemy6.GetComponent<Enemy>();
-		// My_Enemy_Script7 = MyEnemy7.GetComponent<Enemy>();
-		 //My_Enemy_Script8 = MyEnemy8.GetComponent<Enemy>();
 	 }
 	 #endregion
 	
@@ -93,8 +92,6 @@ public float speed;
 		Health_Info4 = My_Enemy_Script4.Health;
 		Health_Info5 = My_Enemy_Script5.Health;
 		Health_Info6 = My_Enemy_Script6.Health;
-		//Health_Info7 = My_Enemy_Script7.Health;
-		//Health_Info8 = My_Enemy_Script8.Health;
 		
 		Move1();
 		Move2();
@@ -102,14 +99,12 @@ public float speed;
 		Move4();
 		Move5();
 		Move6();
-		//Move7();
-		//Move8();
 		}
 		#endregion
 		
 #region MOVE MEHODS FOR PLAYER
 		public void Move1(){
-			Debug.Log("Enemy 1 Health = "+Health_Info1);
+			//Debug.Log("Enemy 1 Health = "+Health_Info1);
 				if(My_Enemy_Script1.Health == 0 ){
 					if(Vector3.Distance(Directions[current].transform.position, transform.position) < radius){
 					current++;
@@ -122,7 +117,7 @@ public float speed;
 			}
 		}
 		public void Move2(){
-			Debug.Log("Enemy 2 Health = "+Health_Info2);
+			//Debug.Log("Enemy 2 Health = "+Health_Info2);
 				if(My_Enemy_Script2.Health == 0 ){
 					if(Vector3.Distance(Directions1[current1].transform.position, transform.position) < radius1){
 					current1++;
@@ -135,7 +130,7 @@ public float speed;
 			}
 		}
 		public void Move3(){
-			Debug.Log("Enemy 3 Health = "+Health_Info3);
+			//Debug.Log("Enemy 3 Health = "+Health_Info3);
 				if(My_Enemy_Script3.Health == 0 ){
 					if(Vector3.Distance(Directions2[current2].transform.position, transform.position) < radius2){
 					current2++;
@@ -149,7 +144,7 @@ public float speed;
 		}
 
 		public void Move4(){
-			Debug.Log("Enemy 4 Health = "+Health_Info4);
+			//Debug.Log("Enemy 4 Health = "+Health_Info4);
 				if(My_Enemy_Script4.Health == 0 ){
 					if(Vector3.Distance(Directions3[current3].transform.position, transform.position) < radius3){
 					current3++;
@@ -163,7 +158,7 @@ public float speed;
 		}
 
 		 void Move5(){
-			Debug.Log("Enemy 5 Health = "+Health_Info5);
+			//Debug.Log("Enemy 5 Health = "+Health_Info5);
 				if(My_Enemy_Script5.Health == 0 ){
 					if(Vector3.Distance(Directions4[current4].transform.position, transform.position) < radius4){
 					current4++;
@@ -177,7 +172,7 @@ public float speed;
 		}
 
 		public void Move6(){
-			Debug.Log("Enemy 6 Health = "+Health_Info6);
+			//Debug.Log("Enemy 6 Health = "+Health_Info6);
 				if(My_Enemy_Script6.Health == 0 ){
 					if(Vector3.Distance(Directions5[current5].transform.position, transform.position) < radius5){
 					current5++;
@@ -189,46 +184,15 @@ public float speed;
 				transform.position = Vector3.Lerp(transform.position, Directions5[current5].transform.position, Time.smoothDeltaTime * speed + 0.80f);
 			}
 		}
-
-/*
-		public void Move7(){
-			Debug.Log("Enemy 7 Health = "+Health_Info7);
-				if(My_Enemy_Script7.Health == 0 ){
-					if(Vector3.Distance(Directions6[current6].transform.position, transform.position) < radius6){
-					current6++;
-					if(current6 >= Directions6.Length)
-					{
-						current6 = 1;
-					}
-				}
-				transform.position = Vector3.MoveTowards(transform.position, Directions6[current6].transform.position, Time.smoothDeltaTime * speed + 0.80f);
-			}
-		}
-*/
-
-/*
-		public void Move8(){
-			Debug.Log("Enemy 8 Health = "+Health_Info8);
-				if(My_Enemy_Script8.Health == 0 ){
-					if(Vector3.Distance(Directions7[current7].transform.position, transform.position) < radius7){
-					current7++;
-					if(current7 >= Directions7.Length)
-					{
-						current7 = 1;
-					}
-				}
-				transform.position = Vector3.MoveTowards(transform.position, Directions7[current7].transform.position, Time.smoothDeltaTime * speed + 0.80f);
-			}
-		}
-		*/
 		#endregion
 		public void GettingHit(int Damage)
 	{
 		Health -= Damage;
-		Debug.Log("Player Health = "+Health);
+		//Debug.Log("Player Health = "+Health);
 		if(Health <= 0)
 		{
 			Destroy(gameObject);
+			SceneManager.LoadScene("level 2");
 		}
 	}
 	}
