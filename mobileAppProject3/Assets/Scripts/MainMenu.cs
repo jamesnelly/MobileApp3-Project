@@ -9,4 +9,12 @@ public class MainMenu : MonoBehaviour {
 	{
 		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex +1);
 	}
+
+	public void controls(){
+		SceneManager.LoadScene("Controls");
+	}
+
+	public void Rules(){
+		SceneManager.LoadScene("Rules");
+	}
 }
