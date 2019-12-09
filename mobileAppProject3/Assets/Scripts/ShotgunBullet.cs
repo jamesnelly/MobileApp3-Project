@@ -16,7 +16,7 @@ public class ShotgunBullet : MonoBehaviour {
 
 	void OnTriggerEnter2D (Collider2D hitInfo)
 	{
-		Enemy enemy = hitInfo.GetComponent<Enemy>();
+		Enemy enemy = hitInfo.transform.GetComponent<Enemy>();
 		if(enemy != null)
 		{
 			enemy.GettingHit(Damage);
