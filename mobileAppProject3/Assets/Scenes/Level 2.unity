@@ -447,7 +447,7 @@ MonoBehaviour:
   ScoreValue: 100
   EnemyBullet: {fileID: 1042955138119844, guid: 8519d89ff73ddb140b80d1a3fe3da459,
     type: 2}
-  StartTimeBtwShots: 2
+  StartTimeBtwShots: 3
 --- !u!4 &523783690 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4688263715895076, guid: 2410147cb4c521847acebd6e5ebee7a1,
@@ -776,7 +776,7 @@ Prefab:
     - target: {fileID: 114535474324189862, guid: 60af6c3e8bf34924ea40586ec0411699,
         type: 2}
       propertyPath: StartTimeBtwShots
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4554165311673860, guid: 60af6c3e8bf34924ea40586ec0411699, type: 2}
       propertyPath: m_LocalScale.z
@@ -1545,7 +1545,7 @@ Prefab:
     - target: {fileID: 114535474324189862, guid: 60af6c3e8bf34924ea40586ec0411699,
         type: 2}
       propertyPath: StartTimeBtwShots
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1380333163300334, guid: 60af6c3e8bf34924ea40586ec0411699, type: 2}
       propertyPath: m_Layer
@@ -1707,7 +1707,7 @@ Prefab:
     - target: {fileID: 114535474324189862, guid: 60af6c3e8bf34924ea40586ec0411699,
         type: 2}
       propertyPath: StartTimeBtwShots
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1380333163300334, guid: 60af6c3e8bf34924ea40586ec0411699, type: 2}
       propertyPath: m_Layer
@@ -2157,7 +2157,7 @@ Prefab:
     - target: {fileID: 114535474324189862, guid: 60af6c3e8bf34924ea40586ec0411699,
         type: 2}
       propertyPath: StartTimeBtwShots
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4554165311673860, guid: 60af6c3e8bf34924ea40586ec0411699, type: 2}
       propertyPath: m_LocalScale.z
@@ -2761,7 +2761,7 @@ Prefab:
     - target: {fileID: 114246932327542724, guid: 76c7ad9de08bc534cb3c020340317d95,
         type: 2}
       propertyPath: Health
-      value: 200
+      value: 240
       objectReference: {fileID: 0}
     - target: {fileID: 114246932327542724, guid: 76c7ad9de08bc534cb3c020340317d95,
         type: 2}
@@ -2975,7 +2975,7 @@ Prefab:
     - target: {fileID: 114535474324189862, guid: 60af6c3e8bf34924ea40586ec0411699,
         type: 2}
       propertyPath: StartTimeBtwShots
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4554165311673860, guid: 60af6c3e8bf34924ea40586ec0411699, type: 2}
       propertyPath: m_LocalScale.z

@@ -1060,7 +1060,7 @@ Prefab:
     - target: {fileID: 114244873631239572, guid: aa4c59c3ffbacf84bb274ce0fe938cf2,
         type: 2}
       propertyPath: StartTimeBtwShots
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1275543739352232, guid: aa4c59c3ffbacf84bb274ce0fe938cf2, type: 2}
       propertyPath: m_Layer
@@ -1315,7 +1315,7 @@ Prefab:
     - target: {fileID: 114535474324189862, guid: 60af6c3e8bf34924ea40586ec0411699,
         type: 2}
       propertyPath: StartTimeBtwShots
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 114535474324189862, guid: 60af6c3e8bf34924ea40586ec0411699,
         type: 2}
@@ -2141,7 +2141,7 @@ Prefab:
     - target: {fileID: 114244873631239572, guid: aa4c59c3ffbacf84bb274ce0fe938cf2,
         type: 2}
       propertyPath: StartTimeBtwShots
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1275543739352232, guid: aa4c59c3ffbacf84bb274ce0fe938cf2, type: 2}
       propertyPath: m_Name
@@ -2436,7 +2436,7 @@ Prefab:
     - target: {fileID: 114244873631239572, guid: aa4c59c3ffbacf84bb274ce0fe938cf2,
         type: 2}
       propertyPath: StartTimeBtwShots
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1275543739352232, guid: aa4c59c3ffbacf84bb274ce0fe938cf2, type: 2}
       propertyPath: m_Layer
